@@ -17,7 +17,7 @@ public class SomadorTest {
     }
 
     @Test
-    public void sumTest() {
+    public void sumIntegrationTest() {
         num = new Numero(5);
         outro = new Numero(3);
 
@@ -29,7 +29,7 @@ public class SomadorTest {
     }
 
     @Test
-    public void subtractionTest() {
+    public void subtractionIntegrationTest() {
         num = new Numero(20);
         outro = new Numero(10);
 
