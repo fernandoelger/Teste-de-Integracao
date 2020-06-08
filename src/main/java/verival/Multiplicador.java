@@ -20,7 +20,7 @@ public class Multiplicador{
       this.resultado.set(new Numero(0));
       return this;
     }
-    else if (multiplicador == 1) {
+    if (multiplicador == 1) {
       return this;
     }
     
@@ -59,15 +59,9 @@ public class Multiplicador{
 
     Somador aux = new Somador();
     aux.set(resultado.resultado());
-    Numero newValue;
     int result = 1;
 
-    
-
     while ((aux.menos(outro).resultado().valor()) > 0) {
-        //aux.menos(outro);
-        //newValue = resultado.resultado();
-        //resultado.set(newValue);
         result++;
     }
 

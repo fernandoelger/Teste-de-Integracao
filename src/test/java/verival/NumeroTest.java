@@ -46,4 +46,13 @@ public class NumeroTest {
         int expected = 10;
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void toStringTest() {
+        num = new Numero(10);
+
+        String actual = num.toString();
+        String expected = "10";
+        assertEquals(expected, actual);
+    }
 }

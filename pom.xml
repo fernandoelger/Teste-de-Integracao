@@ -52,6 +52,13 @@
         --> 
     </dependencies>
 
+    <properties>
+        <sonar.projectKey>fernandoelger_Teste-de-Integracao</sonar.projectKey>
+        <sonar.organization>fernandoelger</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>02f3098bd0d4a3a9d02062c3c2aa2466d0e6c062</sonar.login>
+    </properties>
+
     <build>
         <plugins>
             <plugin>

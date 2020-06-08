@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-public class SomadorTest {
+class SomadorTest {
     Somador somador;
     Numero num;
     Numero outro;
@@ -24,7 +24,7 @@ public class SomadorTest {
                 "3, -3, 6",
                 "-7, 5, -2",
                 "-3, -2, -1"})
-    public void sumTest(int num1, int num2, int expected) {
+    void sumTest(int num1, int num2, int expected) {
         num = new Numero(num1);
         outro = new Numero(num2);
 
@@ -41,7 +41,7 @@ public class SomadorTest {
                 "3, -5, -2",
                 "-4, 2, -6",
                 "-4, -3, -7"})
-    public void subtractionTest(int num1, int num2, int expected) {
+    void subtractionTest(int num1, int num2, int expected) {
         num = new Numero(num1);
         outro = new Numero(num2);
 
@@ -54,7 +54,7 @@ public class SomadorTest {
     }
 
     @Test
-    public void sumIntegrationTest() {
+    void sumIntegrationTest() {
         num = new Numero(5);
         outro = new Numero(3);
 

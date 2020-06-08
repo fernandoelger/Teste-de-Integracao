@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-public class MultiplicadorTest {
+class MultiplicadorTest {
     Multiplicador mult;
     Somador somador;
     Numero num;
@@ -27,8 +27,10 @@ public class MultiplicadorTest {
                 "10, -10, -100",
                 "-10, 2, -20",
                 "-3, -4, 12",
-                "0, 5, 0"})
-    public void multiplicationTest(int num1, int num2, int expected) {
+                "0, 5, 0",
+                "6, 0, 0",
+                "5, 1, 5"})
+    void multiplicationTest(int num1, int num2, int expected) {
         num = new Numero(num1);
         outro = new Numero(num2);
 
@@ -47,8 +49,8 @@ public class MultiplicadorTest {
                 "-100, -10, 10",
                 "5, 2, 3",
                 "7, 1, 7",
-                "7, 1, 7"})
-    public void divisionTest(int num1, int num2, int expected) {
+                "0, 5, 0"})
+    void divisionTest(int num1, int num2, int expected) {
         num = new Numero(num1);
         outro = new Numero(num2);
 

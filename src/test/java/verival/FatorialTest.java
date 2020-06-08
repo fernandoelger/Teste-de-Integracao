@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-public class FatorialTest {
+class FatorialTest {
     Fatorial fat;
     Multiplicador mult;
     Somador somador;
@@ -28,7 +28,7 @@ public class FatorialTest {
                 "-1, -1",
                 "5, 120",
                 "-4, -24"})
-    public void multiplicationTest(int num, int expected) {
+    void multiplicationTest(int num, int expected) {
         valor = new Numero(num);
 
         fat.fatorial(valor);
