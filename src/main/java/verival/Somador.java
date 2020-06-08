@@ -1,4 +1,4 @@
-package com.bcopstein;
+package verival;
 
 public class Somador {
     private Numero resultado;
